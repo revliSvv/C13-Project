@@ -19,6 +19,8 @@ function preload() {
 function setup() {
   createCanvas(400, 400);
 
+
+  
   //creating background
   scene = createSprite(0, 0, 400, 400);
   scene.addImage(backgroundImage);
@@ -32,11 +34,13 @@ function setup() {
 }
 
 function draw() {
+  
+  
   background(0);
   // moving ground
 
-  textSize(20);
-  text('Score: ' + score, 150, 50);
+  
+
 
   scene.velocityX = -3
 
@@ -75,6 +79,11 @@ function draw() {
   }
 
   drawSprites();
+
+  textSize(20);
+  stroke('black');
+  fill('black');  
+  text('Score: ' + score, 150, 50);
 }
 
 
